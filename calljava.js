@@ -1,2 +1,2 @@
 // script.js
-alert('Hello, JavaScript!');
+alert('2:外部のjsファイルから呼び出しています');
