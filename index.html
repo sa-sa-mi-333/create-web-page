@@ -3,37 +3,17 @@
 <!-- htmlタグ　ここで日本語言語を指定することも -->
 <html lang="ja">
 <!-- headerタグ -->
-  
 <head>
  <!-- 文字コードをUTF-8に指定 -->
  <meta charset="UTF-8">
  <!-- レスポンシブデザイン用にviewportを指定する　デバイスのウィンドウの幅に合わせて表示幅が可変する -->
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <!-- CSSフレームワークを読み込む -->
- <script src="https://cdn.tailwindcss.com"></script>
- <!-- CSSフレームワークを読み込む -->
-  <title>title：html＆CSSでWebサイトを作る(自習用)</title>
+  <title>javascriptの呼び出し方法</title>
 </head>
-  
-<!-- bodyタグ 背景色の設定-色-濃淡 -->
-<body class="bg-slate-100">
-  <!-- headerタグのCSS定義 背景色の設定-色-濃淡 p(padding,余白)x/y(方向)-n(ピクセル) -->
-  <header class="bg-sky-900 px-14 py-4">
- 　 <!-- h1タグのCSS定義 テキスト-サイズ フォント-フォント指定 テキスト-色 -->
-    <h1 class="text-2xl font-bold text-white">
-      header：ページ上の見出し部分
-    </h1>
-  </header>
-  <!-- メインタグのCSS　p(padding,余白)x/y(方向)-n(ピクセル) -->
-  <main class="px-14 py-9">
-    <!-- divタグのCSS　背景色-白　p(padding,余白)-n(ピクセル)　flex items-位置 justify(水平方向)-位置 丸める-丸め具合 -->
-    <div class="bg-white p-14 flex items-center justify-center rounded-lg">
-      main内divタグ：段落(ブロック要素)になるので、divタグごとに細かく書式や配置を設定できるはず
-    </div>
-  </main>
-  <!-- フッターのCSS定義　テキスト-配置　テキスト-サイズ？ -->
-  <footer class="text-center text-lg font-bold text-色-濃淡">
-    footer：ページ下の部分　コピーライトなどが書いてある
-  </footer>
+<body>
+  <!-- 直接HTMLの中に記載する場合のテスト -->
+　<script>
+   alert('htmlに直接したコードです');
+　</script>
 </body>
 </html>
