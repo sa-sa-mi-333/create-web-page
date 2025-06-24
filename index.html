@@ -1,21 +1,24 @@
-<!-- htmlであることを宣言 -->
-<!doctype html>
-<!-- htmlタグ　ここで日本語言語を指定することも -->
-<html lang="ja">
-<!-- headerタグ -->
+<!DOCTYPE html>
+<html>
 <head>
- <!-- 文字コードをUTF-8に指定 -->
- <meta charset="UTF-8">
- <!-- レスポンシブデザイン用にviewportを指定する　デバイスのウィンドウの幅に合わせて表示幅が可変する -->
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <!-- 直接HTMLの中に記載する場合のテスト -->
- <script>
-  alert('1:htmlに直接したコードです');
- </script>
-  <!-- 外部のjsファイルを呼び出す場合のテスト -->
- <script src="calljava.js"></script>
- <title>javascriptの呼び出し方法</title>
+    <title>イベントハンドリングの例</title>
 </head>
 <body>
+    <!-- idでヘッダを指定 変更前はheaderとする -->
+    <h1 id="header">Click the button to change this text</h1>
+    <!-- idでヘッダを指定 変更後はchangeTextButtonとする -->
+    <button id="changeTextButton">Change Text</button>
+
+    <script>
+        // ボタン要素を取得
+        let button = document.getElementById('changeTextButton');
+
+        // ボタンにクリックイベントハンドラを追加　ボタンがクリックされたら無名関数を実行
+        button.addEventListener('click', function() {
+            // h1要素のテキストを変更
+            let header = document.getElementById('header');
+            header.textContent = 'Text has been changed!';
+        });
+    </script>
 </body>
 </html>
